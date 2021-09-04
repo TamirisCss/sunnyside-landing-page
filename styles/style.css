@@ -1,3 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner .menu .logo {
+  width: 9rem;
+  height: 2rem;
+}
+
+.banner .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.banner .menu ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.banner h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem;
+}
+
+.banner .arrow-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .arrow-down img {
+  padding-top: 2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
