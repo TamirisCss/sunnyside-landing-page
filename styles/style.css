@@ -50,6 +50,15 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.banner .menu .nav-links a:hover {
+  text-transform: uppercase;
+  background-color: rgba(25, 83, 107, 0.1);
 }
 
 .banner h1 {
@@ -101,6 +110,10 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
   }
   .nav-links li {
     margin-bottom: 1rem;
@@ -108,14 +121,10 @@ body {
   .nav-links a {
     color: #818498 !important;
     font-size: 1.5rem !important;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
   }
   .nav-links a:hover {
     text-transform: uppercase;
-    background-color: #fad400;
+    background-color: #fad400 !important;
   }
   .nav-links .clip {
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -126,6 +135,10 @@ body {
     background-color: white;
     top: -10%;
     right: 0;
+  }
+  .nav-open {
+    -webkit-transform: translateX(130%);
+            transform: translateX(130%);
   }
 }
 
@@ -204,8 +217,16 @@ body {
   z-index: -1;
 }
 
+.boxes .box1 a:hover:before, .boxes .box4 a:hover:before {
+  background: #fad400;
+}
+
 .boxes .box1 .line-color:before, .boxes .box4 .line-color:before {
   background: rgba(254, 120, 103, 0.3);
+}
+
+.boxes .box1 .line-color:hover:before, .boxes .box4 .line-color:hover:before {
+  background: #fe7867;
 }
 
 .boxes .box2 {
@@ -369,11 +390,16 @@ footer {
   font-size: 1rem;
 }
 
+.footer-container ul a:hover {
+  color: white;
+}
+
 .footer-container .social {
   padding-bottom: 2rem;
 }
 
 .footer-container .social img {
+  cursor: pointer;
   padding: .90rem;
 }
 
