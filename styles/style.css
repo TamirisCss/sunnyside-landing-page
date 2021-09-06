@@ -70,6 +70,103 @@ body {
   padding-top: 2rem;
 }
 
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.boxes .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxes .box1, .boxes .box4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxes .box1 .text, .boxes .box4 .text {
+  text-align: left;
+}
+
+.boxes .box1 h3, .boxes .box4 h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #23303e;
+}
+
+.boxes .box1 p, .boxes .box4 p {
+  font-size: 1rem;
+  color: #818498;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.boxes .box1 a, .boxes .box4 a {
+  font-family: 'Fraunces', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #23303e;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.boxes .box1 a:before, .boxes .box4 a:before {
+  content: ' ';
+  position: absolute;
+  width: 110%;
+  height: .5rem;
+  border-radius: 1rem;
+  background: rgba(250, 212, 0, 0.3);
+  left: -5%;
+  top: 65%;
+  z-index: -1;
+}
+
+.boxes .box1 .line-color:before, .boxes .box4 .line-color:before {
+  background: rgba(254, 120, 103, 0.3);
+}
+
+.boxes .box2 {
+  background-image: url(../images/desktop/image-desktop-egg.jpg);
+}
+
+.boxes .box3 {
+  background-image: url(../images/desktop/image-desktop-cup.jpg);
+}
+
+.boxes .box5 {
+  background-image: url(../images/desktop/image-desktop-cherry.jpg);
+  background-position: initial;
+}
+
+.boxes .box6 {
+  background-image: url(../images/desktop/image-desktop-orange.jpg);
+  background-position: initial;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
