@@ -20,7 +20,6 @@ $white: hsl(0, 0%, 100%);
 }
 body {
     font-family: 'Barlow', sans-serif;
-    // font-family: 'Fraunces', serif;
 }
 
 //Header
@@ -34,12 +33,15 @@ body {
         display: flex;
         padding: 2rem;
         justify-content: space-between;
+        .burger {
+            display: none;
+        }
         .logo {
             width: 9rem;
             height: 2rem;
             fill: $white;
         }
-        ul {
+        .nav-links {
             display: flex;
             gap: 2rem;
             text-decoration: none;
@@ -49,7 +51,7 @@ body {
                 color: $white;
                 font-size: 1rem;
             }
-        }
+        } 
     }
     h1 {
         color: $white;
@@ -66,6 +68,51 @@ body {
         img {
             padding-top: 2rem;
         }
+    }
+}
+@media screen and (max-width: 680px) {
+    .menu {
+        padding: 2rem 0rem!important;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .burger {
+        display: block!important;
+        cursor: pointer;
+    }
+    .nav-links {
+        background-color: $white;
+        position: absolute;
+        top: 20%;
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: $dark-grayish-blue!important;
+            font-size: 1.5rem!important;
+            transition: all .5s ease;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            &:hover {
+                text-transform: uppercase;
+                background-color: $yellow;
+            }
+        }
+        .clip {
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            height: 3rem;
+            width: 3rem;
+            position: absolute;
+            background-color: $white;
+            top: -10%;
+            right: 0;
+        }
+        
     }
 }
 
@@ -257,3 +304,5 @@ footer {
         color: hsl(228, 45%, 44%);
     }
 }
+
+
