@@ -159,12 +159,41 @@ body {
 
 .boxes .box5 {
   background-image: url(../images/desktop/image-desktop-cherry.jpg);
-  background-position: initial;
 }
 
 .boxes .box6 {
   background-image: url(../images/desktop/image-desktop-orange.jpg);
-  background-position: initial;
+}
+
+.boxes .box5, .boxes .box6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.boxes .box5 h4, .boxes .box6 h4 {
+  color: #25564b;
+  font-size: 1.4rem;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 2rem;
+}
+
+.boxes .box5 p, .boxes .box6 p {
+  color: #5a636c;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
 }
 
 .attribution {

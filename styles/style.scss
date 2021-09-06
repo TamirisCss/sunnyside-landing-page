@@ -134,11 +134,28 @@ body {
     }
     .box5 {
         background-image: url(../images/desktop/image-desktop-cherry.jpg);
-        background-position: initial;
     }
     .box6 {
         background-image: url(../images/desktop/image-desktop-orange.jpg);
-        background-position: initial;
+    }
+    .box5, .box6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        h4 {
+            color: $dark-desaturated-cyan;
+            font-size: 1.4rem;
+            font-family: 'Fraunces', serif;
+            margin-bottom: 2rem;
+        }
+        p {
+            color: $very-dark-grayish-blue;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7rem;
+        }
     }
 }
 
