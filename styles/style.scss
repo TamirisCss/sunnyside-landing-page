@@ -280,6 +280,16 @@ body {
         }
     }
 }
+@media screen and (max-width: 880px) {
+    .clients {
+        flex-direction: column;
+    }
+    .gallery {
+        .images {
+            flex: 2 2 5rem!important;
+        }
+    }
+}
 
 
 //Footer

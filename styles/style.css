@@ -349,6 +349,20 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 880px) {
+  .clients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .images {
+    -webkit-box-flex: 2 !important;
+        -ms-flex: 2 2 5rem !important;
+            flex: 2 2 5rem !important;
+  }
+}
+
 footer {
   background-color: #458c7e;
   color: #25564b;
